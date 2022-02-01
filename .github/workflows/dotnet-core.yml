@@ -1,5 +1,5 @@
 name: .NET Core 
-
+#trigger
 on:
   pull_request:
     branches: [ master ]
