@@ -3,8 +3,8 @@ name: .NET Core
 on:
   pull_request:
     branches: [ master ]
-  schedule:
-    - cron: "0 07 * * *"
+#   schedule:
+#     - cron: "0 07 * * *"
   workflow_dispatch:
     logLevel:
       description: 'Log level'
@@ -75,5 +75,5 @@ jobs:
         server: ${{ secrets.OCTOPUSSERVERURL }}
         space: ${{ secrets.OCTOPUSSERVER_SPACE }}
         project: "Octo Pet Shop"
-        deploy_to: "Development"
+        deploy_to: "Default"
         progress: true
